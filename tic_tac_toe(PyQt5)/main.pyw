@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jul  1 18:35:34 2020
-
-@author: Nabeel
-"""
-# writing comments on everyline is difficult so 
-# read doc strings...
-# importing modules for use...
 import sys, random
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from Layout import Ui_MainWindow
@@ -158,7 +149,6 @@ class MyTicTacToe(QMainWindow):
         if self.ui.b3.text() == "O" and self.ui.b6.text() == "O" \
             and self.ui.b9.text() == "O":
             return "O"
-        
         
     def botMove(self):
         """Makes a move for O intelligently depending on the board.
@@ -361,8 +351,7 @@ class MyTicTacToe(QMainWindow):
             j.setChecked(False)
         self.enableAll()    #enables all the checkboxes
         self.ui.result.setText("")  #resets the result label
-        
-    
+
 if __name__ == "__main__":# this is a tradition of python programmers
     app = QApplication(sys.argv)# makes an app instance
     w = MyTicTacToe()   # a window instance of MyTicTacToe
