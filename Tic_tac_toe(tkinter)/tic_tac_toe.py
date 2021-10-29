@@ -1,11 +1,8 @@
- 
-   
 from tkinter import *
 from tkinter import messagebox
-from random import randint
+# from random import randint
 import time
-# import webbrowser
-from PIL import Image,ImageTk
+# from PIL import Image,ImageTk
 
 
 # GLOABAL VARIABLES
@@ -16,29 +13,13 @@ Count = 0
 ScoreX = 0
 ScoreO = 0
 new = 1
-# url = "http://127.0.0.1:5500/about.html"
-# def openweb():
-#     webbrowser.open(url, new=new)
-
-
-
-
 
 root = Tk()
 root.geometry("1000x600")
 root.title("Tic Tac Toe :Player 1")
-root.iconbitmap("img/sv.ico")
+# root.iconbitmap("img/sv.ico")
 root.configure(background="#b92b27")
 root.wm_attributes("-transparentcolor","#b92b27")
-
-
-
-
-#--time veriable----
-
-# label = Label(root, text='00', font="Times 15 bold", bg='cadet blue', fg='black', bd=4, height=2, width=10,
-#                relief=RAISED, )
-# label.grid(row=0, column=1, padx=5, pady=5, sticky='nsnew')
 
 # # Declaration of variables
 hour = StringVar()
@@ -105,7 +86,6 @@ def submit():
             messagebox.showinfo("Time Countdown", "Time's up ")
             root.destroy()
             openweb()
-
 
         # after every one sec the value of temp will be decremented
         # by one
