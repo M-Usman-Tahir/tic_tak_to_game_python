@@ -96,16 +96,7 @@ btn = Button(frame, text='Start', bd='5',font=("times new roman",15,"bold"),bg="
              command=submit)
 btn.place(x=250, y=5)
 
-
-
 #---------end--
-
-
-
-
-# label1 = Label(root, text='Tic Tac Toe', font="Times 15 bold", bg='cadet blue', fg='black', bd=4, height=2, width=10,
-#                relief=RAISED, )
-# label1.grid(row=1, column=1, padx=5, pady=5, sticky='nsnew')
 
 label2 = Label(root, text=f'PLAYER1: {ScoreX}\nPLAYER2: {ScoreO}', font="Times 15 bold", bg='#e55d87',
                fg='#5fc3e4', bd=4, height=1, width=10, relief=RAISED, )
@@ -454,18 +445,13 @@ def CheckWiner():
         messagebox.showinfo(title="Oops!!", message="It's a Tie")
         game_ended()
 
-
 for i in range(1, 4):
     root.grid_rowconfigure(i, weight=1)
 
 for i in range(3):
     root.grid_columnconfigure(i, weight=1)
 
-
 def enter_function(event):
     b10.invoke()
 
-
 root.bind('<Return>', enter_function)
- 
- 
